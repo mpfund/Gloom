@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="gloomApp">
+<head>
+<script src="./angular.min.js"></script>
+<script>
+
+var gloomApp = angular.module('gloomApp', []);
+
+gloomApp.controller('StartCtrl', function ($scope) {
+  $scope.Greets ="Hello";
+});
+
+</script>
+</head>
+<body ng-controller="StartCtrl">
+<h1>{{Greets}}</h2>
+</body>
+</html>
